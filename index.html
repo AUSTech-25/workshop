@@ -1,107 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <base href="." />
-    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
-    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css" />
-    <meta name="description" content="Conference Template" />
-    <meta name="resource-type" content="document" />
-    <meta name="distribution" content="global" />
-    <meta name="keywords" content="Conference" />
+    <meta charset="UTF-8">
+    <base href=".">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conference Template">
+    <meta name="resource-type" content="document">
+    <meta name="distribution" content="global">
+    <meta name="keywords" content="Conference">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Conference Template</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .banner {
+            position: relative;
+            width: 100%;
+        }
+
+        .banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .top-left {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 20px 30px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 90%;
+        }
+
+        .top-left .title1 {
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .bottom-right {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            font-size: 14px;
+            padding: 10px 15px;
+            border-radius: 8px;
+        }
+
+        .nav-container {
+            width: 100%;
+            background-color: #0a4d5e;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navigation {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            padding: 14px 20px;
+        }
+
+        .navigation a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 6px 12px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navigation a:hover,
+        .navigation a.current {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 6px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+            background-color: #ffffff;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #0a4d5e;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        ol {
+            padding-left: 20px;
+            margin-bottom: 40px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        strong {
+            color: #0a4d5e;
+        }
+    </style>
 </head>
 
-<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; background-color: #f4f4f4; color: #333;">
+<body>
 
     <!-- Banner -->
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-  }
-
-  .banner-container {
-    width: 100vw;
-    overflow: hidden;
-  }
-
-  .banner {
-    position: relative;
-    width: 100%;
-  }
-
-  .banner img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  .title-overlay {
-    position: absolute;
-    top: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px 30px;
-    border-radius: 10px;
-    color: white;
-    max-width: 90%;
-    text-align: center;
-  }
-
-  .location-tag {
-    position: absolute;
-    bottom: 20px;
-    right: 40px;
-    font-size: 16px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 10px 15px;
-    border-radius: 6px;
-  }
-</style>
-
-<div class="banner-container">
-  <div class="banner">
-    <img src="underwater.jpg" alt="Conference Template Banner">
-    
-    <div class="title-overlay">
-      <div style="font-size: 24px; font-weight: bold;">
-        Advances in Underwater Surveillance: Technologies, Challenges and Future Directions (AUSTech 2025)
-      </div>
+    <div class="banner">
+        <img src="underwater.jpg" alt="Conference Template Banner">
+        <div class="top-left">
+            <div class="title1">
+                Advances in Underwater Surveillance: Technologies, Challenges and Future Directions (AUSTech 2025)
+            </div>
+        </div>
+        <div class="bottom-right">
+            NCVPRIPG 2025 <br> NIT Srinagar
+        </div>
     </div>
 
-    <div class="location-tag">
-      NCVPRIPG 2025<br>NIT Srinagar
-    </div>
-  </div>
+    <!-- Logo Strip -->
+<div class="logo-strip">
+    <img src="logos-strip.png" alt="Sponsors and Partners Logos">
 </div>
 
 
     <!-- Navigation -->
-    <table class="navigation" style="width: 100%; background-color: #004d66; color: white; text-align: center; padding: 10px 0;">
-        <tr>
-            <td class="navigation" style="padding: 10px;"><a class="current" href="." style="color: white; text-decoration: none;">Home</a></td>
-            <td class="navigation" style="padding: 10px;"><a href="registration" style="color: white; text-decoration: none;">Registration</a></td>
-            <td class="navigation" style="padding: 10px;"><a href="program" style="color: white; text-decoration: none;">Program</a></td>
-            <td class="navigation" style="padding: 10px;"><a href="directions" style="color: white; text-decoration: none;">Directions</a></td>
-            <td class="navigation" style="padding: 10px;"><a href="flyer" style="color: white; text-decoration: none;">Flyer</a></td>
-        </tr>
-    </table>
+    <div class="nav-container">
+        <div class="navigation">
+            <a class="current" href=".">Home</a>
+            <a href="registration">Registration</a>
+            <a href="program">Program</a>
+            <a href="directions">Directions</a>
+            <a href="flyer">Flyer</a>
+        </div>
+    </div>
 
-    <!-- Content -->
-    <div style="padding: 40px; background-color: white; max-width: 1000px; margin: auto;">
-        <h2 style="color: #004d66;">Scope of Workshop</h2>
+    <!-- Main Content -->
+    <div class="container">
+        <h2>Scope of Workshop</h2>
         <p>
-            Oceans cover 71% of the Earth's surface, yet much of the underwater domain remains unexplored. Effective surveillance is essential for environmental protection, security, and industrial monitoring. Core objectives include preserving marine ecosystems, monitoring fisheries, detecting aquatic diseases, and preventing illegal activities. Automated systems with advanced imaging and sensors support continuous coastal monitoring by identifying anomalies through audio and video data.
+            Oceans cover 71% of the Earth's surface, yet much of the underwater domain remains unexplored.
+            Effective surveillance is essential for environmental protection, security, and industrial monitoring.
+            Core objectives include preserving marine ecosystems, monitoring fisheries, detecting aquatic diseases,
+            and preventing illegal activities. Automated systems with advanced imaging and sensors support continuous
+            coastal monitoring by identifying anomalies through audio and video data.
         </p>
         <p>
-            Underwater communication has advanced significantly, enabling data exchange between submerged vehicles, sensors, and surface stations. Challenges such as signal attenuation and scattering affect both optical and acoustic data quality. This workshop will explore recent developments in underwater vision, sensor fusion, AI-based analytics, and communication technologies. Topics include deep learning for image enhancement, generative models for data augmentation, autonomous underwater vehicles, and acoustic communication protocols. The workshop aims to connect researchers and industry experts to drive innovation in underwater surveillance.
+            Underwater communication has advanced significantly, enabling data exchange between submerged vehicles,
+            sensors, and surface stations. Challenges such as signal attenuation and scattering affect both optical
+            and acoustic data quality. This workshop will explore recent developments in underwater vision, sensor fusion,
+            AI-based analytics, and communication technologies. Topics include deep learning for image enhancement,
+            generative models for data augmentation, autonomous underwater vehicles, and acoustic communication protocols.
+            The workshop aims to connect researchers and industry experts to drive innovation in underwater surveillance.
         </p>
 
-        <h2 style="color: #004d66;">Topics of Interest</h2>
+        <h2>Topics of Interest</h2>
         <ol>
             <li><strong>Underwater Imaging and Vision Systems</strong>
                 <ul>
@@ -149,5 +233,6 @@
             </li>
         </ol>
     </div>
+
 </body>
 </html>
