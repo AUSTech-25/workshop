@@ -1,106 +1,101 @@
 <!DOCTYPE html>
-<html lang='en'>
-
+<html lang="en">
 <head>
-    <base href=".">
-    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
-    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
-    <meta name="description" content="Conference Template">
-    <meta name="resource-type" content="document">
-    <meta name="distribution" content="global">
-    <meta name="KeyWords" content="Conference">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="." />
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css" />
+    <meta name="description" content="Conference Template" />
+    <meta name="resource-type" content="document" />
+    <meta name="distribution" content="global" />
+    <meta name="keywords" content="Conference" />
     <title>Conference Template</title>
 </head>
 
-<body>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; background-color: #f4f4f4; color: #333;">
 
-<div class="banner" style="position: relative;">
-    <img src="underwater.jpg" alt="Conference Template Banner" style="width: 100%; height: auto;">
-    <div class="top-left" style="position: absolute; top: 20px; left: 20px; color: white;">
-        <div class="title1" style="font-size: 24px; font-weight: bold;">Advances in Underwater Surveillance: Technologies, Challenges and Future Directions (AUSTech 2025)</div>
+    <!-- Banner -->
+    <div class="banner" style="position: relative;">
+        <img src="underwater.jpg" alt="Conference Template Banner" style="width: 100%; height: auto; display: block;" />
+        <div class="top-left" style="position: absolute; top: 30px; left: 40px; color: white; background-color: rgba(0,0,0,0.5); padding: 15px; border-radius: 8px;">
+            <div class="title1" style="font-size: 24px; font-weight: bold; max-width: 700px;">
+                Advances in Underwater Surveillance: Technologies, Challenges and Future Directions (AUSTech 2025)
+            </div>
+        </div>
+        <div class="bottom-right" style="position: absolute; bottom: 20px; right: 40px; font-size: 16px; color: white; background-color: rgba(0,0,0,0.4); padding: 10px 15px; border-radius: 6px;">
+            NCVPRIPG 2025<br>NIT Srinagar
+        </div>
     </div>
-</div>
-       <div class="bottom-right" style="font-size: 16px;>
-            NCVPRIPG 2025 <br> NIT Srinagar        </div>
-     
 
-    <table class="navigation">
+    <!-- Navigation -->
+    <table class="navigation" style="width: 100%; background-color: #004d66; color: white; text-align: center; padding: 10px 0;">
         <tr>
-            <td class="navigation">
-                <a class="current" title="Conference Home Page" href=".">Home</a>
-            </td>
-            <td class="navigation">
-                <a title="Register for the Conference" href="registration">Registration</a>
-            </td>
-            <td class="navigation">
-                <a title="Conference Program" href="program">Program</a> 
-            </td>
-            <td class="navigation">
-                <a title="Directions to the Conference" href="directions">Directions</a>
-            </td>
-            <td class="navigation">
-                <a title="Conference Flyer" href="flyer">Flyer</a>
-            </td>
+            <td class="navigation" style="padding: 10px;"><a class="current" href="." style="color: white; text-decoration: none;">Home</a></td>
+            <td class="navigation" style="padding: 10px;"><a href="registration" style="color: white; text-decoration: none;">Registration</a></td>
+            <td class="navigation" style="padding: 10px;"><a href="program" style="color: white; text-decoration: none;">Program</a></td>
+            <td class="navigation" style="padding: 10px;"><a href="directions" style="color: white; text-decoration: none;">Directions</a></td>
+            <td class="navigation" style="padding: 10px;"><a href="flyer" style="color: white; text-decoration: none;">Flyer</a></td>
         </tr>
     </table>
 
-    <h2>Scope of Workshop</h2>
-    <p>
-        Oceans cover 71% of the Earth's surface, yet much of the underwater domain remains unexplored. Effective surveillance is essential for environmental protection, security, and industrial monitoring. Core objectives include preserving marine ecosystems, monitoring fisheries, detecting aquatic diseases, and preventing illegal activities. Automated systems with advanced imaging and sensors support continuous coastal monitoring by identifying anomalies through audio and video data.
-    </p>
-    <p>
-        Underwater communication has advanced significantly, enabling data exchange between submerged vehicles, sensors, and surface stations. Challenges such as signal attenuation and scattering affect both optical and acoustic data quality. This workshop will explore recent developments in underwater vision, sensor fusion, AI-based analytics, and communication technologies. Topics include deep learning for image enhancement, generative models for data augmentation, autonomous underwater vehicles, and acoustic communication protocols. The workshop aims to connect researchers and industry experts to drive innovation in underwater surveillance.
-    </p>
- 
-	<h2> Topics of Interest </h2>
-<ol>
-    <li><strong>Underwater Imaging and Vision Systems</strong>
-        <ul>
-            <li>Optical vs. acoustic imaging techniques</li>
-            <li>Image enhancement and restoration (dehazing, super-resolution, low-light imaging)</li>
-            <li>Object detection, tracking, and deep learning models (Vision Transformers, generative models)</li>
-        </ul>
-    </li>
+    <!-- Content -->
+    <div style="padding: 40px; background-color: white; max-width: 1000px; margin: auto;">
+        <h2 style="color: #004d66;">Scope of Workshop</h2>
+        <p>
+            Oceans cover 71% of the Earth's surface, yet much of the underwater domain remains unexplored. Effective surveillance is essential for environmental protection, security, and industrial monitoring. Core objectives include preserving marine ecosystems, monitoring fisheries, detecting aquatic diseases, and preventing illegal activities. Automated systems with advanced imaging and sensors support continuous coastal monitoring by identifying anomalies through audio and video data.
+        </p>
+        <p>
+            Underwater communication has advanced significantly, enabling data exchange between submerged vehicles, sensors, and surface stations. Challenges such as signal attenuation and scattering affect both optical and acoustic data quality. This workshop will explore recent developments in underwater vision, sensor fusion, AI-based analytics, and communication technologies. Topics include deep learning for image enhancement, generative models for data augmentation, autonomous underwater vehicles, and acoustic communication protocols. The workshop aims to connect researchers and industry experts to drive innovation in underwater surveillance.
+        </p>
 
-    <li><strong>Sensor Fusion for Underwater Perception</strong>
-        <ul>
-            <li>Multi-modal fusion of optical, sonar, and LiDAR data</li>
-            <li>AI-based real-time sensor fusion and 3D reconstruction</li>
-        </ul>
-    </li>
+        <h2 style="color: #004d66;">Topics of Interest</h2>
+        <ol>
+            <li><strong>Underwater Imaging and Vision Systems</strong>
+                <ul>
+                    <li>Optical vs. acoustic imaging techniques</li>
+                    <li>Image enhancement and restoration (dehazing, super-resolution, low-light imaging)</li>
+                    <li>Object detection, tracking, and deep learning models (Vision Transformers, generative models)</li>
+                </ul>
+            </li>
 
-    <li><strong>Underwater Communication and Networking</strong>
-        <ul>
-            <li>Acoustic, optical, and RF communication challenges</li>
-            <li>AI-driven underwater networking and energy-efficient protocols</li>
-        </ul>
-    </li>
+            <li><strong>Sensor Fusion for Underwater Perception</strong>
+                <ul>
+                    <li>Multi-modal fusion of optical, sonar, and LiDAR data</li>
+                    <li>AI-based real-time sensor fusion and 3D reconstruction</li>
+                </ul>
+            </li>
 
-    <li><strong>Autonomous Underwater Vehicles (AUVs) and Robotics</strong>
-        <ul>
-            <li>AI-powered navigation, deep reinforcement learning for path planning</li>
-            <li>Swarm intelligence for multi-robot collaboration</li>
-        </ul>
-    </li>
+            <li><strong>Underwater Communication and Networking</strong>
+                <ul>
+                    <li>Acoustic, optical, and RF communication challenges</li>
+                    <li>AI-driven underwater networking and energy-efficient protocols</li>
+                </ul>
+            </li>
 
-    <li><strong>Applications of Underwater Surveillance</strong>
-        <ul>
-            <li>Defense and security: naval threat detection</li>
-            <li>Environmental monitoring and marine conservation</li>
-            <li>Industrial inspection: pipelines, offshore structures, and ship hulls</li>
-        </ul>
-    </li>
+            <li><strong>Autonomous Underwater Vehicles (AUVs) and Robotics</strong>
+                <ul>
+                    <li>AI-powered navigation, deep reinforcement learning for path planning</li>
+                    <li>Swarm intelligence for multi-robot collaboration</li>
+                </ul>
+            </li>
 
-    <li><strong>Challenges and Future Directions</strong>
-        <ul>
-            <li>Domain adaptation for underwater AI models</li>
-            <li>Data annotation and real-time processing constraints</li>
-            <li>Emerging trends: quantum sensing, bio-inspired robotics, adaptive vision</li>
-        </ul>
-    </li>
-</ol>
+            <li><strong>Applications of Underwater Surveillance</strong>
+                <ul>
+                    <li>Defense and security: naval threat detection</li>
+                    <li>Environmental monitoring and marine conservation</li>
+                    <li>Industrial inspection: pipelines, offshore structures, and ship hulls</li>
+                </ul>
+            </li>
 
-
+            <li><strong>Challenges and Future Directions</strong>
+                <ul>
+                    <li>Domain adaptation for underwater AI models</li>
+                    <li>Data annotation and real-time processing constraints</li>
+                    <li>Emerging trends: quantum sensing, bio-inspired robotics, adaptive vision</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
 </body>
 </html>
-
