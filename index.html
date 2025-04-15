@@ -16,23 +16,67 @@
 <body style="font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; background-color: #f4f4f4; color: #333;">
 
     <!-- Banner -->
-<div class="banner" style="position: relative; max-width: 100%;">
-    <img src="underwater.jpg" alt="Conference Template Banner" style="width: 100%; height: auto; display: block;" />
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
 
-    <div style="position: absolute; top: 30px; left: 50%; transform: translateX(-50%);
-                background-color: rgba(0, 0, 0, 0.5); padding: 20px 30px;
-                border-radius: 10px; color: white; max-width: 90%; text-align: center;">
-        <div style="font-size: 24px; font-weight: bold;">
-            Advances in Underwater Surveillance: Technologies, Challenges and Future Directions (AUSTech 2025)
-        </div>
+  .banner-container {
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  .banner {
+    position: relative;
+    width: 100%;
+  }
+
+  .banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .title-overlay {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 30px;
+    border-radius: 10px;
+    color: white;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .location-tag {
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    font-size: 16px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 15px;
+    border-radius: 6px;
+  }
+</style>
+
+<div class="banner-container">
+  <div class="banner">
+    <img src="underwater.jpg" alt="Conference Template Banner">
+    
+    <div class="title-overlay">
+      <div style="font-size: 24px; font-weight: bold;">
+        Advances in Underwater Surveillance: Technologies, Challenges and Future Directions (AUSTech 2025)
+      </div>
     </div>
 
-    <div style="position: absolute; bottom: 20px; right: 40px;
-                font-size: 16px; color: white;
-                background-color: rgba(0, 0, 0, 0.6); padding: 10px 15px;
-                border-radius: 6px;">
-        NCVPRIPG 2025<br>NIT Srinagar
+    <div class="location-tag">
+      NCVPRIPG 2025<br>NIT Srinagar
     </div>
+  </div>
 </div>
 
 
