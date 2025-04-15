@@ -8,86 +8,161 @@
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
     <meta name="keywords" content="Conference">
-    <title>Conference Template</title>
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
-    <link rel="stylesheet" type="text/css" href="assets/main.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Conference Template</title>
 
     <style>
-        body {
+        * {
             margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
         }
 
         .banner {
             position: relative;
+            width: 100%;
         }
 
         .banner img {
             width: 100%;
-            height: 250px; /* Reduced height */
-            object-fit: cover;
+            height: auto;
             display: block;
         }
 
         .top-left {
             position: absolute;
             top: 20px;
-            left: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.6);
             color: white;
+            padding: 20px 30px;
+            border-radius: 10px;
+            text-align: center;
             max-width: 90%;
         }
 
-        .title1 {
-            font-size: 28px;
-            font-weight: bold;
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 10px 15px;
-            border-radius: 8px;
+        .top-left .title1 {
+            font-size: 22px;
+            font-weight: 700;
         }
 
         .bottom-right {
             position: absolute;
             bottom: 20px;
-            right: 30px;
+            right: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
             color: white;
-            font-size: 16px;
-            text-align: right;
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 8px 12px;
+            font-size: 14px;
+            padding: 10px 15px;
             border-radius: 8px;
         }
-
+                /* Logo Strip */
         .logo-strip {
             width: 100%;
-            background-color: #ffffff;
+            background-color: #fff;
             text-align: center;
-            padding: 10px 0;
-            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 12px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         .logo-strip img {
             max-width: 100%;
             height: auto;
             display: block;
+            margin: 0 auto;
+        }
+
+        .nav-container {
+            width: 100%;
+            background-color: #0a4d5e;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navigation {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            padding: 14px 20px;
+        }
+
+        .navigation a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 6px 12px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navigation a:hover,
+        .navigation a.current {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 6px;
+        }
+
+        .container {
+            max-width: 1200px;
             margin: auto;
+            padding: 40px 20px;
+            background-color: #ffffff;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #0a4d5e;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        ol {
+            padding-left: 20px;
+            margin-bottom: 40px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        strong {
+            color: #0a4d5e;
         }
     </style>
 </head>
 
 <body>
 
-<!-- Banner -->
-<div class="banner">
-    <img src="underwater.jpg" alt="Conference Template Banner">
-    <div class="top-left">
-        <div class="title1">
-            Advances in Underwater Surveillance: Technologies, Challenges and Future Directions (AUSTech 2025)
+    <!-- Banner -->
+    <div class="banner">
+        <img src="underwater.jpg" alt="Conference Template Banner">
+        <div class="top-left">
+            <div class="title1">
+                Advances in Underwater Surveillance: Technologies, Challenges and Future Directions (AUSTech 2025)
+            </div>
+        </div>
+        <div class="bottom-right">
+            NCVPRIPG 2025 <br> NIT Srinagar
         </div>
     </div>
-    <div class="bottom-right">
-        NCVPRIPG 2025 <br> NIT Srinagar
-    </div>
-</div>
 
 <!-- Logo Strip -->
 <div class="logo-strip">
